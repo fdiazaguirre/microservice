@@ -48,6 +48,11 @@ function checkPayload(req, res, next) {
   }
 };
 
+server.get('/', noImpl);
+server.put('/', noImpl);
+server.post('/', noImpl);
+server.del('/', noImpl);
+
 // Create
 server.post( PATH, checkPayload, domainInterface.createOrganization);
 
